@@ -7,32 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Таблица</title>
     <style>
-        table{
+        table {
             width: 1000px;
             border-spacing: 0;
             margin: 100px auto;
-            }
-            .row {
-                position: sticky;
-                top: 0;
-            }
-            .column{
-                position: sticky;
-                left: 0;
-            }
-        
-        tr:nth-child(odd){
+        }
+
+        .row {
+            position: sticky;
+            top: 0;
+        }
+
+        .column {
+            position: sticky;
+            left: 0;
+        }
+
+        tr:nth-child(odd) {
             background-color: #c4c4c4;
         }
+
         th {
             background-color: rgb(119, 175, 192);
-            
+
         }
-        td,th,tr{
+
+        td,
+        th,
+        tr {
             border: .5px solid gray;
             text-align: center;
         }
-        
+
+        .link {
+            text-decoration: none;
+            color: black;
+            font-size: larger;
+            text-align: center;
+        }
+
+        .link:hover {
+            opacity: .3;
+            transition: .3s filter: alpha(opacity=50);
+            zoom: 1;
+        }
     </style>
 </head>
 
@@ -78,7 +96,8 @@
             <td>23</td>
             <td>23</td>
         </tr>
-        <tr><th class="column">Line 4</th>
+        <tr>
+            <th class="column">Line 4</th>
             <td>23</td>
             <td>23</td>
             <td>23</td>
@@ -127,53 +146,57 @@
         </tr>
         <tr>
             <th class="column">Line 9</th>
-                <td>23</td>
-                <td>23</td>
-                <td>23</td>
-                <td>23</td>
-                <td>23</td>
-            </tr>
-            <tr>
-                <th class="column">Line 10</th>
-                <td>23</td>
-                <td>23</td>
-                <td>23</td>
-                <td>23</td>
-                <td>23</td>
-            </tr>
-            <tr>
-                <th class="column">Line 11</th>
-                <td>23</td>
-                <td>23</td>
-                <td>23</td>
-                <td>23</td>
-                <td>23</td>
-            </tr>
-            <tr>
-                <th class="column">Line 12</th>
-                <td>23</td>
-                <td>23</td>
-                <td>23</td>
-                <td>23</td>
-                <td>23</td>
-            </tr>
-            <tr>
-                <th class="column">Line 13</th>
-                <td>23</td>
-                <td>23</td>
-                <td>23</td>
-                <td>23</td>
-                <td>23</td>
-            </tr>
-            <tr>
-                <th class="column">Line 14</th>
-                <td>23</td>
-                <td>23</td>
-                <td>23</td>
-                <td>23</td>
-                <td>23</td>
-            </tr>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <th class="column">Line 10</th>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <th class="column">Line 11</th>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <th class="column">Line 12</th>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <th class="column">Line 13</th>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <th class="column">Line 14</th>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+        </tr>
     </table>
+    <a class="link" href="../menu/index.html">
+        <div class="link-text">Перейти к заданию 2</div>
+    </a>
 </body>
+
 
 </html>

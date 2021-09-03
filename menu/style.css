@@ -1,0 +1,60 @@
+.wrapper {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.table-text {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(214, 214, 214);
+  border-radius: 20px;
+  padding:20px 40px;
+}
+.menu-box {
+}
+.menu {
+  list-style: none;
+  font-size: larger;
+  font-weight: bold;
+}
+.icon{
+    width: 20px;
+}
+.text-menu{
+    display: none;
+}
+.edit {
+  font-size: medium;
+  font-weight: normal;
+}
+.favorite {
+  font-size: medium;
+  font-weight: normal;
+}
+.histiry {
+  font-size: medium;
+  font-weight: normal;
+}
+.security {
+  font-size: medium;
+  font-weight: normal;
+}
+.settings {
+  font-size: medium;
+  font-weight: normal;
+}
+.title {
+  
+}
+.text {
+  margin: 0 auto;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.link-text {
+  padding-top: 50px;
+  font-size: larger;
+}
