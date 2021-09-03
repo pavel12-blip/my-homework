@@ -20,6 +20,10 @@
 .icon{
     width: 20px;
 }
+.menu:hover .text-menu{
+    display: block;
+    width: 100%;
+}
 .text-menu{
     display: none;
 }
