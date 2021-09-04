@@ -22,13 +22,15 @@ ul{
   padding:20px 40px;
 }
 .menu-box {
+  position: relative;
+  z-index: 2;
   
-  height: 100v;
   background-color: #a3a3a3;
 }
 .menu-box:hover{
   transition: all .5s ease-out;
   opacity: .8;
+  position: relative;
   z-index: 2;
  
 }
@@ -62,10 +64,9 @@ ul{
   padding: 0 10px 0 50px;
   transition: all 1s ease-out;
 }
-.edit:hover .menu-box{
-  
-  
-  
+.menu-box:hover .table-text{
+  position: relative;
+  z-index: 1;
 }
 
 .edit {
