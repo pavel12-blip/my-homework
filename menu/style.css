@@ -1,8 +1,6 @@
-@font-face {
+body {
+  background-color: rgb(228, 227, 227);
   font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/inter-v3-latin_cyrillic-regular.woff2") format("woff2");
 }
 ul {
   padding: 0 20px;
@@ -15,9 +13,7 @@ ul {
 .table-text {
   display: flex;
   flex-direction: column;
-  background-color: rgb(228, 227, 227);
   margin-left: 100px;
-
   padding: 20px 40px;
 }
 .menu-box {
@@ -32,7 +28,6 @@ ul {
   transition: all 0.5s ease-out;
   opacity: 0.6;
   padding-right: 100px;
-
 }
 .menu {
   display: flex;
@@ -74,7 +69,7 @@ ul {
   display: inline-flex;
   justify-content: space-around;
   transition: all 1s ease-out;
-padding-left: 10px;
+  padding-left: 10px;
 }
 
 .favorite {
@@ -105,6 +100,8 @@ padding-left: 10px;
   text-align: center;
 }
 .link-text {
-  padding-top: 50px;
   font-size: larger;
+}
+.link-text:hover {
+  opacity: 0.5;
 }
