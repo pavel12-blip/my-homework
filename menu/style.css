@@ -4,7 +4,7 @@
   font-weight: 400;
   src: url("../fonts/inter-v3-latin_cyrillic-regular.woff2") format("woff2");
 }
-ul{
+ul {
   padding: 0 20px;
 }
 .wrapper {
@@ -16,68 +16,67 @@ ul{
   display: flex;
   flex-direction: column;
   background-color: rgb(228, 227, 227);
-  
-  
-  
-  padding:20px 40px;
+  margin-left: 100px;
+
+  padding: 20px 40px;
 }
 .menu-box {
   position: fixed;
-  height: 100vh;
+  height: 100%;
   background-color: #a3a3a3;
   top: 0;
   left: 0;
+  transition: all 0.5s ease-out;
 }
-.menu-box:hover{
-  transition: all .5s ease-out;
-  opacity: .8;
-  
-  
- 
+.menu-box:hover {
+  transition: all 0.5s ease-out;
+  opacity: 0.6;
+  padding-right: 100px;
+
 }
 .menu {
-  position:sticky;
-    top: 0;
-    left: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
   list-style: none;
   font-size: larger;
   font-weight: bold;
+  height: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
-.icon{
-    width: 20px;
+.icon {
+  width: 20px;
 }
 
-
-.text-menu{
-    display: none;
-    text-align: center;
-    
-}
-.edit:hover{
-  background-color: rgb(58, 58, 58);
-  transition: all .5s ease-out;
-  border-radius: 10px;
-  
-}
-.menu-box:hover .text-menu{
-  display: block;
-  padding: 0 10px 0 50px;
+.text-menu {
+  display: none;
+  text-align: center;
   transition: all 1s ease-out;
+  padding: 0 10px 0 50px;
 }
-.edit:hover .menu-box{
-  
-  
-  
+
+.edit:hover {
+  background-color: rgb(58, 58, 58);
+  transition: all 0.5s ease-out;
+  border-radius: 10px;
+}
+
+.menu-box:hover .text-menu {
+  display: flex;
+  transition: all 1s ease-out;
 }
 
 .edit {
   font-size: medium;
   font-weight: normal;
   display: inline-flex;
-  justify-content: center;
+  justify-content: space-around;
   transition: all 1s ease-out;
+padding-left: 10px;
 }
+
 .favorite {
   font-size: medium;
   font-weight: normal;
@@ -95,10 +94,10 @@ ul{
   font-weight: normal;
 }
 .title {
-  
+  margin: 30px 40px 30px 40px;
 }
 .text {
-  margin: 0 auto;
+  margin: 0 40px 0 40px;
 }
 .link {
   text-decoration: none;
