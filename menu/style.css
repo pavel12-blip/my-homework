@@ -16,22 +16,23 @@ ul{
   display: flex;
   flex-direction: column;
   background-color: rgb(228, 227, 227);
-  z-index: 1;
-  position: relative;
+  
+  
   
   padding:20px 40px;
 }
 .menu-box {
-  position: relative;
-  z-index: 2;
-  
+  position: fixed;
+  height: 100vh;
   background-color: #a3a3a3;
+  top: 0;
+  left: 0;
 }
 .menu-box:hover{
   transition: all .5s ease-out;
   opacity: .8;
-  position: relative;
-  z-index: 2;
+  
+  
  
 }
 .menu {
@@ -64,9 +65,10 @@ ul{
   padding: 0 10px 0 50px;
   transition: all 1s ease-out;
 }
-.menu-box:hover .table-text{
-  position: relative;
-  z-index: 1;
+.edit:hover .menu-box{
+  
+  
+  
 }
 
 .edit {
