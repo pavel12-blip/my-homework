@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v3-latin_cyrillic-regular.woff2") format("woff2");
+}
+ul{
+  padding: 0 20px;
+}
 .wrapper {
   width: 100%;
   display: inline-flex;
@@ -6,30 +15,67 @@
 .table-text {
   display: flex;
   flex-direction: column;
-  background-color: rgb(214, 214, 214);
-  border-radius: 20px;
+  background-color: rgb(228, 227, 227);
+  z-index: 1;
+  position: relative;
+  
   padding:20px 40px;
 }
 .menu-box {
+  width: 150px;
+  height: 100vh;
+  background-color: #a3a3a3;
+}
+.menu-box:hover{
+  
+  width: 150px;
+  transition: all .5s ease-out;
+  opacity: .8;
+  z-index: 2;
 }
 .menu {
+  position:sticky;
+    top: 0;
+    left: 0;
   list-style: none;
   font-size: larger;
   font-weight: bold;
 }
+
 .icon{
     width: 20px;
 }
-.menu:hover .text-menu{
-    display: block;
-    width: 100%;
+.menu-box:hover .text-menu{
+    
+    
+    transition: all 2s ease-out;
+    
+    
+
 }
+
 .text-menu{
     display: none;
+    text-align: center;
+    
 }
+.edit:hover{
+  background-color: rgb(58, 58, 58);
+  transition: all .5s ease-out;
+  border-radius: 10px;
+  
+}
+.edit:hover .text-menu{
+  display: block;
+  padding: 0 10px 0 10px;
+}
+
 .edit {
   font-size: medium;
   font-weight: normal;
+  display: inline-flex;
+  justify-content: center;
+  transition: all 1s ease-out;
 }
 .favorite {
   font-size: medium;
