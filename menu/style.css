@@ -8,7 +8,7 @@ ul{
   padding: 0 20px;
 }
 .wrapper {
-  width: 100%;
+  height: fit-content;
   display: inline-flex;
   justify-content: space-between;
 }
@@ -22,16 +22,15 @@ ul{
   padding:20px 40px;
 }
 .menu-box {
-  width: 150px;
-  height: 100vh;
+  
+  height: 100v;
   background-color: #a3a3a3;
 }
 .menu-box:hover{
-  
-  width: 150px;
   transition: all .5s ease-out;
   opacity: .8;
   z-index: 2;
+ 
 }
 .menu {
   position:sticky;
@@ -45,14 +44,7 @@ ul{
 .icon{
     width: 20px;
 }
-.menu-box:hover .text-menu{
-    
-    
-    transition: all 2s ease-out;
-    
-    
 
-}
 
 .text-menu{
     display: none;
@@ -65,9 +57,15 @@ ul{
   border-radius: 10px;
   
 }
-.edit:hover .text-menu{
+.menu-box:hover .text-menu{
   display: block;
-  padding: 0 10px 0 10px;
+  padding: 0 10px 0 50px;
+  transition: all 1s ease-out;
+}
+.edit:hover .menu-box{
+  
+  
+  
 }
 
 .edit {
