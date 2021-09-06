@@ -56,3 +56,14 @@
 .green{
     background-color: green;
 }
+.link {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+  .link-text {
+    font-size: larger;
+  }
+  .link-text:hover {
+    opacity: 0.5;
+  }
